@@ -17,7 +17,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("")
+    @GetMapping("/")
     public ResponseEntity<?> getListUser() {
         List<UserDto> users = userService.getListUser();
         return ResponseEntity.ok(users);
